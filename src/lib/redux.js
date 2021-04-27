@@ -15,7 +15,7 @@ function taskStateReducer(taskState) {
     return (state, action) => {
         return {
             ...state,
-            tasks: state.task.map(task => task.id === action.id ? { ...task, state: taskState } : task),
+            tasks: state.tasks.map(task => task.id === action.id ? { ...task, state: taskState } : task),
         }
     }
 }
