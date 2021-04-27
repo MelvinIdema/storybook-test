@@ -11,6 +11,7 @@ export default function Task({task: { id, title, state}, onArchiveTask, onPinTas
                 disabled={true}
                 value={title}
                 name={'checked'}
+                style={{background: 'red'}}
                 readOnly={true} />
             <span className={'checkbox-custom'} onClick={() => onArchiveTask(id)} />
             </label>
